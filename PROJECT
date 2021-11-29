@@ -1,0 +1,16 @@
+domain: cabourotte.mcorbin.fr
+layout:
+- go.kubebuilder.io/v3
+projectName: cabourotte-crd
+repo: github.com/mcorbin/cabourotte-crd
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: cabourotte.mcorbin.fr
+  group: cabourotte.mcorbin.fr
+  kind: Healthcheck
+  path: github.com/mcorbin/cabourotte-crd/api/v1
+  version: v1
+version: "3"

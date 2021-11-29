@@ -1,0 +1,6 @@
+apiVersion: cabourotte.mcorbin.fr.cabourotte.mcorbin.fr/v1
+kind: Healthcheck
+metadata:
+  name: healthcheck-sample
+spec:
+  # TODO(user): Add fields here

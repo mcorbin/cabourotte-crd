@@ -1,0 +1,24 @@
+# permissions for end users to edit healthchecks.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: healthcheck-editor-role
+rules:
+- apiGroups:
+  - cabourotte.mcorbin.fr.cabourotte.mcorbin.fr
+  resources:
+  - healthchecks
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - cabourotte.mcorbin.fr.cabourotte.mcorbin.fr
+  resources:
+  - healthchecks/status
+  verbs:
+  - get

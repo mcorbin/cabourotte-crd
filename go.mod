@@ -3,7 +3,7 @@ module github.com/mcorbin/cabourotte-crd
 go 1.16
 
 require (
-	github.com/mcorbin/cabourotte v0.13.1-0.20211130195730-604de39ae7e5
+	github.com/mcorbin/cabourotte v0.13.1-0.20211130204724-bb351749067e
 	github.com/onsi/ginkgo v1.16.4
 	github.com/onsi/gomega v1.15.0
 	github.com/prometheus/common v0.32.1 // indirect

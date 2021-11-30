@@ -2,6 +2,7 @@ apiVersion: cabourotte.mcorbin.fr/v1
 kind: Healthcheck
 metadata:
   name: healthcheck-sample
+  namespace: default
 spec:
   dns-checks:
     - name: "mcorbin-dns-check"

@@ -319,7 +319,10 @@ github.com/mcorbin/cabourotte v0.13.1-0.20211130195556-cf73a73367c2 h1:7kFd6rINo
 github.com/mcorbin/cabourotte v0.13.1-0.20211130195556-cf73a73367c2/go.mod h1:ymmBdXSNB8Kddu0I6oHAcrlroDhkvwMHWm/blHG4xik=
 github.com/mcorbin/cabourotte v0.13.1-0.20211130195730-604de39ae7e5 h1:VGsIcD/uKsvdm+PpFRtHbrDJcXDk4M9cEQ9zZ2xcIYA=
 github.com/mcorbin/cabourotte v0.13.1-0.20211130195730-604de39ae7e5/go.mod h1:ymmBdXSNB8Kddu0I6oHAcrlroDhkvwMHWm/blHG4xik=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130204724-bb351749067e h1:GZnitchHw0oui+YBlU/tfAT9BfWPY9PwpusTT9PVG6M=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130204724-bb351749067e/go.mod h1:t+bM4EAxh/tmGbnOQXI/iZ3goIcFSfaWPBJhZLOy/Xw=
 github.com/mcorbin/cabourotte-crd v0.0.0-20211130173607-adac7e0fe8cd/go.mod h1://bzrRXCoOQjLSFrCKNJTiBHDcyzThGVd4LCJ48MtVg=
+github.com/mcorbin/cabourotte-crd v0.0.0-20211130201832-514475a1bab0/go.mod h1:NtomPMQ3Df4cU6UmfqufcOQaDnmavQwv00RsdNlV61s=
 github.com/miekg/dns v1.0.14/go.mod h1:W1PPwlIAgtquWBMBEV9nkV9Cazfe8ScdGz/Lj7v3Nrg=
 github.com/mitchellh/cli v1.0.0/go.mod h1:hNIlj7HEI86fIcpObd7a0FcrxTWetlwJDGcceTlRvqc=
 github.com/mitchellh/go-homedir v1.0.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=

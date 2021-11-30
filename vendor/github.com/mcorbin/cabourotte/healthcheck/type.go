@@ -172,12 +172,22 @@ type IP net.IP
 // UnmarshalText unmarshal an IP
 func (i *IP) UnmarshalText(text []byte) error {
 	s := string(text)
-	ip := net.ParseIP(s)
+	t := s[1 : len(s)-1]
+	ip := net.ParseIP(t)
 	if ip == nil {
-		return fmt.Errorf("Invalid IP %s", s)
+		return fmt.Errorf("Invalid IP %s", t)
 	}
 	*i = IP(ip)
 	return nil
+}
+
+// MarshalText marshal an IP
+func (i *IP) MarshalText() ([]byte, error) {
+	if i != nil {
+		ip := net.IP(*i)
+		return []byte(ip.String()), nil
+	}
+	return nil, nil
 }
 
 // UnmarshalJSON unmarshal to json an IP

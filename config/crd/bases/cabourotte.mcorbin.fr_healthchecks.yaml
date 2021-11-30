@@ -51,9 +51,7 @@ spec:
                     description:
                       type: string
                     interval:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     labels:
                       additionalProperties:
                         type: string
@@ -65,17 +63,11 @@ spec:
                     source:
                       type: string
                     timeout:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                   required:
-                  - arguments
                   - command
-                  - description
                   - interval
                   - name
-                  - one-off
-                  - source
                   - timeout
                   type: object
                 type: array
@@ -91,14 +83,10 @@ spec:
                       type: string
                     expected-ips:
                       items:
-                        description: IP an alias for the IP type
-                        format: byte
                         type: string
                       type: array
                     interval:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     labels:
                       additionalProperties:
                         type: string
@@ -110,12 +98,9 @@ spec:
                     source:
                       type: string
                   required:
-                  - description
                   - domain
                   - interval
                   - name
-                  - one-off
-                  - source
                   type: object
                 type: array
               http-checks:
@@ -143,9 +128,7 @@ spec:
                     insecure:
                       type: boolean
                     interval:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     key:
                       type: string
                     labels:
@@ -163,38 +146,26 @@ spec:
                     port:
                       type: integer
                     protocol:
-                      description: Protocol is the healthcheck http protocol
-                      type: integer
+                      type: string
                     redirect:
                       type: boolean
                     source:
                       type: string
                     source-ip:
-                      description: IP an alias for the IP type
-                      format: byte
                       type: string
                     target:
                       description: can be an IP or a domain
                       type: string
                     timeout:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     valid-status:
                       items:
                         type: integer
                       type: array
                   required:
-                  - description
-                  - insecure
                   - interval
-                  - method
                   - name
-                  - one-off
                   - port
-                  - protocol
-                  - redirect
-                  - source
                   - target
                   - timeout
                   - valid-status
@@ -209,9 +180,7 @@ spec:
                     description:
                       type: string
                     interval:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     labels:
                       additionalProperties:
                         type: string
@@ -227,24 +196,16 @@ spec:
                     source:
                       type: string
                     source-ip:
-                      description: IP an alias for the IP type
-                      format: byte
                       type: string
                     target:
                       description: can be an IP or a domain
                       type: string
                     timeout:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                   required:
-                  - description
                   - interval
                   - name
-                  - one-off
                   - port
-                  - should-fail
-                  - source
                   - target
                   - timeout
                   type: object
@@ -262,15 +223,11 @@ spec:
                     description:
                       type: string
                     expiration-delay:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     insecure:
                       type: boolean
                     interval:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                     key:
                       type: string
                     labels:
@@ -288,35 +245,20 @@ spec:
                     source:
                       type: string
                     source-ip:
-                      description: IP an alias for the IP type
-                      format: byte
                       type: string
                     target:
                       description: can be an IP or a domain
                       type: string
                     timeout:
-                      description: Duration an alias for the duration type
-                      format: int64
-                      type: integer
+                      type: string
                   required:
-                  - description
-                  - expiration-delay
-                  - insecure
                   - interval
                   - name
-                  - one-off
                   - port
-                  - source
                   - target
                   - timeout
                   type: object
                 type: array
-            required:
-            - command-checks
-            - dns-checks
-            - http-checks
-            - tcp-checks
-            - tls-checks
             type: object
           status:
             description: HealthcheckStatus defines the observed state of Healthcheck

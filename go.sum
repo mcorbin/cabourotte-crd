@@ -311,6 +311,15 @@ github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182aff
 github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369/go.mod h1:BSXmuO+STAnVfrANrmjBb36TMTDstsz7MSK+HVaYKv4=
 github.com/mcorbin/cabourotte v0.13.1-0.20211129205931-a4c93f16083a h1:dUidMmCkwVGF1vRiVAV3GnMtb5U+e77UHfb2D44eXuA=
 github.com/mcorbin/cabourotte v0.13.1-0.20211129205931-a4c93f16083a/go.mod h1:1rIh+/0nv+ZRTmy779EOxa6/EK78kHlLHSkXh+WXX+k=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130191855-9a1de91e3828 h1:Zt5V4Uhwgwy0Wrq24wPjhHHDabl2pwdgYXszrMGHWmg=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130191855-9a1de91e3828/go.mod h1:ymmBdXSNB8Kddu0I6oHAcrlroDhkvwMHWm/blHG4xik=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130192455-5f99788917e6 h1:ldEkPfpmKs6rBQyXOY0jpaWqg4EHUPDHQvIogtm5T0A=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130192455-5f99788917e6/go.mod h1:ymmBdXSNB8Kddu0I6oHAcrlroDhkvwMHWm/blHG4xik=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130195556-cf73a73367c2 h1:7kFd6rINocGb5toX6voHNyB1+baA9WvGoW3uZkj+w/c=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130195556-cf73a73367c2/go.mod h1:ymmBdXSNB8Kddu0I6oHAcrlroDhkvwMHWm/blHG4xik=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130195730-604de39ae7e5 h1:VGsIcD/uKsvdm+PpFRtHbrDJcXDk4M9cEQ9zZ2xcIYA=
+github.com/mcorbin/cabourotte v0.13.1-0.20211130195730-604de39ae7e5/go.mod h1:ymmBdXSNB8Kddu0I6oHAcrlroDhkvwMHWm/blHG4xik=
+github.com/mcorbin/cabourotte-crd v0.0.0-20211130173607-adac7e0fe8cd/go.mod h1://bzrRXCoOQjLSFrCKNJTiBHDcyzThGVd4LCJ48MtVg=
 github.com/miekg/dns v1.0.14/go.mod h1:W1PPwlIAgtquWBMBEV9nkV9Cazfe8ScdGz/Lj7v3Nrg=
 github.com/mitchellh/cli v1.0.0/go.mod h1:hNIlj7HEI86fIcpObd7a0FcrxTWetlwJDGcceTlRvqc=
 github.com/mitchellh/go-homedir v1.0.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=

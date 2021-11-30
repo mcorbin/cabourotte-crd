@@ -61,7 +61,7 @@ github.com/imdario/mergo
 github.com/json-iterator/go
 # github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369
 github.com/matttproud/golang_protobuf_extensions/pbutil
-# github.com/mcorbin/cabourotte v0.13.1-0.20211129205931-a4c93f16083a
+# github.com/mcorbin/cabourotte v0.13.1-0.20211130195730-604de39ae7e5
 ## explicit
 github.com/mcorbin/cabourotte/healthcheck
 github.com/mcorbin/cabourotte/prometheus

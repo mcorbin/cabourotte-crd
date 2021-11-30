@@ -30,14 +30,19 @@ type HealthcheckSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
+	// +kubebuilder:validation:Optional
 	// CommandChecks healthchecks of type commands
 	CommandChecks []healthcheck.CommandHealthcheckConfiguration `yaml:"command-checks" json:"command-checks"`
+	// +kubebuilder:validation:Optional
 	// DNSChecks healthchecks of type DNS
 	DNSChecks []healthcheck.DNSHealthcheckConfiguration `yaml:"dns-checks" json:"dns-checks"`
+	// +kubebuilder:validation:Optional
 	// TCPChecks healthchecks of type TCP
 	TCPChecks []healthcheck.TCPHealthcheckConfiguration `yaml:"tcp-checks" json:"tcp-checks"`
+	// +kubebuilder:validation:Optional
 	// HTTPChecks healthchecks of type HTTP
 	HTTPChecks []healthcheck.HTTPHealthcheckConfiguration `yaml:"http-checks" json:"http-checks"`
+	// +kubebuilder:validation:Optional
 	//  healthchecks of type TLS
 	TLSChecks []healthcheck.TLSHealthcheckConfiguration `yaml:"tls-checks" json:"tls-checks"`
 }

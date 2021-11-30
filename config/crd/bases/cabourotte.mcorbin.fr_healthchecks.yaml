@@ -6,9 +6,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.7.0
   creationTimestamp: null
-  name: healthchecks.cabourotte.mcorbin.fr.cabourotte.mcorbin.fr
+  name: healthchecks.cabourotte.mcorbin.fr
 spec:
-  group: cabourotte.mcorbin.fr.cabourotte.mcorbin.fr
+  group: cabourotte.mcorbin.fr
   names:
     kind: Healthcheck
     listKind: HealthcheckList

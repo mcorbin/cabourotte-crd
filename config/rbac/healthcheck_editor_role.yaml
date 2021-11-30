@@ -5,7 +5,7 @@ metadata:
   name: healthcheck-editor-role
 rules:
 - apiGroups:
-  - cabourotte.mcorbin.fr.cabourotte.mcorbin.fr
+  - cabourotte.mcorbin.fr
   resources:
   - healthchecks
   verbs:
@@ -17,7 +17,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - cabourotte.mcorbin.fr.cabourotte.mcorbin.fr
+  - cabourotte.mcorbin.fr
   resources:
   - healthchecks/status
   verbs:

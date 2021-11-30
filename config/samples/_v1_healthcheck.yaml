@@ -1,4 +1,4 @@
-apiVersion: cabourotte.mcorbin.fr.cabourotte.mcorbin.fr/v1
+apiVersion: cabourotte.mcorbin.fr/v1
 kind: Healthcheck
 metadata:
   name: healthcheck-sample

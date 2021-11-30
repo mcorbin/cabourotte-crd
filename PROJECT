@@ -9,7 +9,6 @@ resources:
     namespaced: true
   controller: true
   domain: cabourotte.mcorbin.fr
-  group: cabourotte.mcorbin.fr
   kind: Healthcheck
   path: github.com/mcorbin/cabourotte-crd/api/v1
   version: v1

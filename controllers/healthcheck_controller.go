@@ -33,9 +33,9 @@ type HealthcheckReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=cabourotte.mcorbin.fr.cabourotte.mcorbin.fr,resources=healthchecks,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=cabourotte.mcorbin.fr.cabourotte.mcorbin.fr,resources=healthchecks/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=cabourotte.mcorbin.fr.cabourotte.mcorbin.fr,resources=healthchecks/finalizers,verbs=update
+//+kubebuilder:rbac:groups=cabourotte.mcorbin.fr,resources=healthchecks,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=cabourotte.mcorbin.fr,resources=healthchecks/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=cabourotte.mcorbin.fr,resources=healthchecks/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.

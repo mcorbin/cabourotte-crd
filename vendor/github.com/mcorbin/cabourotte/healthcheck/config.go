@@ -9,6 +9,8 @@ const (
 	SourceKubernetesPod string = "kubernetes-pod"
 	// SourceKubernetesService the check was created from a service pod
 	SourceKubernetesService string = "kubernetes-service"
+	// SourceKubernetesCRD the check was created from a service pod
+	SourceKubernetesCRD string = "kubernetes-crd"
 )
 
 // Base shared fields between healthchecks

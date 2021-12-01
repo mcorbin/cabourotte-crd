@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net"
 	"regexp"
+	"strings"
 	"time"
 
 	"github.com/pkg/errors"
@@ -14,12 +15,20 @@ import (
 // Duration an alias for the duration type
 type Duration time.Duration
 
+func unQuote(text []byte) string {
+	s := string(text)
+	if strings.HasPrefix(s, "\"") {
+		return s[1 : len(s)-1]
+	}
+	return s
+}
+
 // UnmarshalText unmarshal a duration
 func (d *Duration) UnmarshalText(text []byte) error {
 	if len(text) < 2 {
 		return errors.New(fmt.Sprintf("%s is not a duration", text))
 	}
-	t := text[1 : len(text)-1]
+	t := unQuote(text)
 	dur, err := time.ParseDuration(string(t))
 	if err != nil {
 		return errors.Wrapf(err, "%s is not a duration", text)
@@ -44,8 +53,8 @@ func (d *Duration) UnmarshalJSON(text []byte) error {
 }
 
 // MarshalJSON marshal to json a duration
-func (d Duration) MarshalJSON() ([]byte, error) {
-	duration := time.Duration(d)
+func (d *Duration) MarshalJSON() ([]byte, error) {
+	duration := time.Duration(*d)
 	return json.Marshal(duration.String())
 }
 
@@ -81,8 +90,7 @@ func (p *Protocol) UnmarshalText(text []byte) error {
 	if len(text) < 2 {
 		return errors.New(fmt.Sprintf("Invalid protocol %s", text))
 	}
-	t := text[1 : len(text)-1]
-	s := string(t)
+	s := unQuote(text)
 	if s == "http" {
 		*p = HTTP
 	} else if s == "https" {
@@ -114,7 +122,10 @@ type Regexp regexp.Regexp
 
 // UnmarshalText unmarshal a duration
 func (r *Regexp) UnmarshalText(text []byte) error {
-	s := string(text)
+	if len(text) < 2 {
+		return errors.New(fmt.Sprintf("%s is not a duration", text))
+	}
+	s := unQuote(text)
 	reg, err := regexp.Compile(s)
 	if err != nil {
 		return errors.Wrapf(err, "Invalid regexp: %s", s)
@@ -124,7 +135,7 @@ func (r *Regexp) UnmarshalText(text []byte) error {
 }
 
 // UnmarshalJSON unmarshal to json a Regexp
-func (r Regexp) UnmarshalJSON(text []byte) error {
+func (r *Regexp) UnmarshalJSON(text []byte) error {
 	return r.UnmarshalText(text)
 }
 
@@ -171,11 +182,13 @@ type IP net.IP
 
 // UnmarshalText unmarshal an IP
 func (i *IP) UnmarshalText(text []byte) error {
-	s := string(text)
-	t := s[1 : len(s)-1]
-	ip := net.ParseIP(t)
+	if len(text) < 2 {
+		return errors.New(fmt.Sprintf("%s is not a duration", text))
+	}
+	s := unQuote(text)
+	ip := net.ParseIP(s)
 	if ip == nil {
-		return fmt.Errorf("Invalid IP %s", t)
+		return fmt.Errorf("Invalid IP %s with source %s", s, string(text))
 	}
 	*i = IP(ip)
 	return nil

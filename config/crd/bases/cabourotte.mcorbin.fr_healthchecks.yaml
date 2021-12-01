@@ -113,7 +113,7 @@ spec:
                       type: string
                     body-regexp:
                       items:
-                        type: object
+                        type: string
                       type: array
                     cacert:
                       type: string
